@@ -33,9 +33,6 @@ function animate(){
 }
 
 function connectWebSocket(){
-  // Si la página se sirve por https, usar wss. Sino, ws.
-  let protocol = (window.location.protocol === 'https:') ? 'wss' : 'ws';
-
   // SUPONIENDO que la ESP32 obtiene IP 192.168.142.5 en tu móvil
   // Míralo en el Serial de la ESP32 (WiFi.localIP()) y ajusta:
   let ipESP = "192.168.142.1";
