@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>BNO085 Cube Demo</title>
+  <style>
+    body { margin: 0; padding: 0; background: #202020; color: #fff; }
+    #info {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: rgba(0,0,0,0.3);
+      padding: 5px;
+    }
+  </style>
+  <!-- Importmap: carga Three.js desde la CDN (sin hosting local) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.131/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="info">Waiting for quaternion...</div>
+
+  <!-- Tu script principal con el cubo y WebSocket -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>
